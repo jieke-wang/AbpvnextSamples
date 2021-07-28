@@ -1,0 +1,15 @@
+# 使用cmd进入Project.EntityFrameworkCore项目所在的目录
+
+# 指定上下文和迁移文件输出目录,添加数据迁移
+dotnet ef migrations add init -c ProjectDbContext -o Migrations
+
+# 移除数据迁移
+# ef migrations remove
+
+# 将数据迁移应用到数据库
+dotnet ef database update
+
+
+dotnet ef dbcontext info
+dotnet ef dbcontext list
+dotnet ef dbcontext script
