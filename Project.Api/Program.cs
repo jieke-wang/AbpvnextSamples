@@ -21,6 +21,6 @@ namespace Project.Api
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();
-                });
+                }).UseAutofac();
     }
 }
